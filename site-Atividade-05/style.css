@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/*Formatação da pagina*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+/*Grade de cores do site*/
+:root{
+    --color-neutra-00: #13394E; 
+    --color-neutra-10:#1A2425;
+    --color-neutra-20:#41555A;
+    --color-neutra-30:#41555A;
+    --color-neutra-40:#768B8F;
+    --color-neutra-50:#FAFEFD;
+    --color-neutra-60:#173440;
+    --color-neutra070:#3F5559;
+    --color-neutra-80:#8A8C87;
+    --color-neutra-90:#D8D9D7;
+    --color-neutra-100:#BFB4AA;
+    --color-neutra-110:#0c0c0c;
+    --color-neutra-120:#171717;
+    --color-neutra-130:#a8a29e;
+    --color-neutra-140:#f5f5f5;
+}
+
+
+/*Estilização do top da página, HEADER*/
+.containerHeader{
+  margin: 0 auto;
+  max-width: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header{
+  background-color: #174459;
+  width: 100%;
+  padding: 20px;
+}
+
+.logo{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.logoMinText{
+  font-size: 30px;
+  color: #ffffff;
+  padding-left: 20px;
+}
+
+.logoName{
+  font-size: 30px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+.navigation{
+  width: 50%;
+  padding-left: 20px;
+}
+
+.navigation nav a{
+  color: #ffffff;
+  text-decoration: none;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-size: 18px;
+}
+
+/*Estilização do centro da página*/
+/* .contentMid{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color:  #B0B7D3;
+} */
+
+/* main { *filho de
+  flex: 3;
+  width: 60%;
+  justify-content: center;
+  padding: 50px;
+} */
+
+/* aside {filho
+  flex: 1;
+  width: 40%;
+  background-color: #f4f4f4;
+  
+} */
+
+.contentMid {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: #B0B7D3;
+  /* overflow: auto; ou overflow: hidden; */
+}
+
+main {
+  flex: 3;
+  width: calc(60% - 20px);
+  padding: 20px;
+  overflow: auto; 
+}
+
+aside {
+  flex: 1;
+  width: calc(40% - 20px); 
+  padding: 20px;
+  background-color: #f4f4f4;
+  overflow: auto; 
+}
+
+/*EStilização do rodapé da  página, FOOTER*/
+footer {
+  width: 100%;
+  color: var(--color-neutra-140);
+}
+
+#conteiner-footer{
+  letter-spacing: 1px;
+  background-color: var(--color-neutra-00);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3.5rem 3.5rem;
+}
+
+#footer-contato{
+  margin-left: 9rem ;
+  margin-bottom: 0.75rem;
+}
+
+#footer-social_media{
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+#footer-social_media 
+.footer-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--color-neutra-140);
+  border-radius: 50%;
+}
+
+#instagram{
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+  text-decoration: none;
+}
+
+#facebook{
+  background-color: #4267b3;
+  text-decoration: none;
+}
+
+#telegram{
+  background-color:  #024873;
+  text-decoration: none;
+}
+
+.footer-lista {
+  margin-left: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.footer-lista .footer-link{
+
+  color: var(--color-neutra-130);
+}
+
+.footer-lista .footer-link:hover{
+  color: var(--color-neutra-60);
+}
+
+.footerLogo{
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+/*Estilizações de elementos div*/
+
+.conteudoLivros{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* padding: 1.5rem 3.5rem;  */
+  gap: 30px;
+}
+
+#img{
+  height: 400px;
+  width: 200px;
+}
+
+.itemLivro{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #13394E;
+  border-radius: 6px;
+  background-color:#B4BEC9 ;
+  transition: 1s;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  color: #000000;
+}
+
+.itemLivro:hover{
+  border: 2px solid  #B4BEC9;
+  border-radius: 6px;
+  background-color: #13394E ;
+  transition: 1s;
+  color: #ffffff;
+}
+
+.tituloLivro:hover{
+  transition: 0.05s;
+  color: #ffffff;
+  
+}
+
+.tituloLivro{
+  font-size:18px;
+  font-weight: bold;
+  color: #000000;
+  padding-top: 7px;
+  padding-bottom: 7px ;
+  padding: 8px;
+}
+
+/* .textoAlea{
+
+  padding-bottom: 50px ;
+} */
+
+.texto{ /*Qualquer tag que tenha class como 'texto', css pradrão para todos*/
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
